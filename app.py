@@ -30,7 +30,7 @@ scored_df = df.sort_values("score", ascending=False).reset_index(drop=True)
 # ------------------------------
 # Show Scores Table
 st.subheader("📊 Team Scores")
-st.dataframe(scored_df.style.background_gradient(subset=["score"], cmap="Greens"))
+st.dataframe(scored_df)
 
 # ------------------------------
 # Highlight Winner
